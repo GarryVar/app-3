@@ -9,7 +9,7 @@ const App = (props) => {
     return (
         <div className={s.wrapper}>
             <Svgsprite />
-            <Header />
+            <Header logoState={props.logoState} />
             <Navbar navItemProps={props.navItemProps} settingItemProps={props.settingItemProps}/>
             <Content />
         </div>

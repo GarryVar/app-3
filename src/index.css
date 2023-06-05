@@ -4,10 +4,10 @@
   --header: #e6e6e6;
   --active: #fff3;
   --white: #ffffff;
-  --mainColor: #3f3e3e;
-  --linkHover : #3f51b5;
-  --link: #476c6d;
-  --border: #bababa;
+  --mainColor: #67a95a;
+  --linkHover : rgba(139, 195, 74, 0.55);
+  --link: #697060;
+  --border: #dedede;
   --mainOutline: #87cefa;
 
   /*Response Width*/
@@ -45,8 +45,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
-
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Geologica', sans-serif;
 }
 
 img {

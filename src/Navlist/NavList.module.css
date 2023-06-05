@@ -4,47 +4,59 @@
     justify-items: center;
 }
 
+.item {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.item svg {
+    fill: var(--mainColor);
+}
+
+.item:focus,
+.item:hover {
+    background-color: var(--linkHover);
+}
+
+.item:focus .link,
+.item:hover .link {
+    color: var(--white);
+}
+
+.item:focus svg,
+.item:hover svg {
+    fill: var(--white);
+}
+
 .link {
     display: grid;
     grid-template-rows: 20px 1fr;
     justify-items: center;
     align-items: center;
 
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding: 5px;
 
     font-size: 0;
     text-transform: capitalize;
-    color: var(--mainColor);
+    color: var(--link);
 
     transition: letter-spacing 0.2s ease-out;
     border-radius: var(--sm-radius);
 }
 
-.item:last-child {
-    margin-bottom: 20px;
-}
-
-.item:first-child {
-    margin-top: 20px;
-}
-
-.link svg {
-    fill: var(--link);
-}
-
-.link:focus,
-.link:hover {
-    color: var(--white);
-    background-color: #bbd2d2;
-}
-
-.link:focus svg,
-.link:hover svg {
-    fill: var(--white);
-}
 
 @media (min-width: 640px) {
+    .list {
+        row-gap: 0;
+    }
+
+    .item {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
     .link {
         gap: 15px;
         font-size: 14px;
