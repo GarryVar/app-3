@@ -1,0 +1,43 @@
+.list {
+    display: grid;
+}
+
+.link {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+
+    letter-spacing: 2px;
+    padding: 15px;
+
+    font-size: 14px;
+    text-transform: capitalize;
+    color: var(--mainColor);
+
+    transition: letter-spacing 0.2s ease-out;
+    border-radius: var(--sm-radius);
+}
+
+.item:last-child {
+    margin-bottom: 20px;
+}
+
+.item:first-child {
+    margin-top: 20px;
+}
+
+.link svg {
+    fill: var(--link);
+}
+
+.link:focus,
+.link:hover {
+    color: var(--white);
+    background-color: #bbd2d2;
+}
+
+.link:focus svg,
+.link:hover svg {
+    fill: var(--white);
+}

@@ -1,0 +1,15 @@
+.wrapper {
+    position: relative;
+    display: grid;
+    grid-auto-rows: 60px 1fr;
+    grid-template-columns: min-content 1fr;
+    grid-template-areas: "header header header"
+                        "navbar content contetn";
+}
+
+@media(min-width: 640px) {
+    .wrapper {
+        grid-auto-rows: 80px 1fr;
+        grid-template-columns: min-content 1fr;
+    }
+}

@@ -1,11 +1,141 @@
+:root {
+  /*Colors light-theme*/
+  --light-bg: #f7f7f9;
+  --header: #e6e6e6;
+  --active: #fff3;
+  --white: #ffffff;
+  --mainColor: #3f3e3e;
+  --linkHover : #3f51b5;
+  --link: #476c6d;
+  --border: #bababa;
+  --mainOutline: #87cefa;
+
+  /*Response Width*/
+  --md-mobile: 360px;
+  --lg-mobile: 540px;
+  --sm-tabletWidth: 640px;
+  --tabletWidth: 768px;
+  --desktopWidth: 1024px;
+  --sm-radius: 3px;
+
+  --gap-mobile: 15px;
+  --gap-tablet: 20px;
+  --gap-desktop: 60px;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+* {
+  outline: none;
+
+  transition: all .1s ease-in-out;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  min-width: 320px;
+
+  font-family: 'Questrial', sans-serif;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h1 {
+  align-self: center;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--mainColor);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainColor);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  margin: -1px;
+  padding: 0;
+
+  width: 1px;
+  height: 1px;
+
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  width: auto;
+}
+
+@media(min-width: 640px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media(min-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media(min-width: 1100px) {
+  .container {
+    margin: auto;
+  }
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

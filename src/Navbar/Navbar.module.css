@@ -1,0 +1,27 @@
+.nav {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    grid-area: navbar;
+    min-height: 100%;
+    overflow: hidden;
+
+    background-color: var(--white);
+}
+
+.layout {
+    position: relative;
+}
+
+.separateBlock {
+    border-bottom: 1px solid var(--border);
+}
+
+@media(min-width: 640px) {
+    .nav{
+        position: sticky;
+        top: 80px;
+        border-right: none;
+    }
+}
+
