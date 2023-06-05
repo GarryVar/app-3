@@ -13,7 +13,7 @@ let state = {
     },
     logoState: {
         logoPath: "#logo",
-        width: 120,
+        width: 160,
         height: 40
     }
 
