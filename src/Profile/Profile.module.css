@@ -1,19 +1,16 @@
 .content {
     display: grid;
     gap: 20px;
-    grid-template-columns: 60px 1fr 1fr;
-    grid-template-rows: 190px 190px 1fr;
+    grid-template-columns: 60px 200px 1fr;
     grid-template-areas:
-            "cover cover cover"
             "avatar desc desc"
             "myposts myposts myposts";
     grid-area: content;
 
     min-height: 100vh;
-    border-left: 1px solid var(--border);
+    padding: 10px;
 
-    padding-left: 10px;
-    padding-right: 10px;
+    background-color: var(--softBlue);
 }
 
 .layout {
@@ -40,8 +37,8 @@
     width: 60px;
     height: 60px;
 
-    border-radius: 50%;
-    background-color: var(--mainColor);
+    background-color: var(--white);
+    border-radius: var(--borderRadius-medium);
     grid-area: avatar;
 }
 
@@ -55,5 +52,6 @@
 
     border: 1px solid var(--border);
     border-radius: var(--sm-radius);
+    background-color: var(--white);
 }
 
