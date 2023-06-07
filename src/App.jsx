@@ -2,7 +2,7 @@ import React from "react";
 import s from './App.module.css';
 import Header from "./Header/Header";
 import Navbar from "./Navbar/Navbar";
-import Content from "./Content/Content";
+import Profile from "./Profile/Profile";
 import Svgsprite from "./Svgsprite/Svgsprite";
 
 const App = (props) => {
@@ -11,7 +11,7 @@ const App = (props) => {
             <Svgsprite />
             <Header logoState={props.logoState} />
             <Navbar navItemProps={props.navItemProps} settingItemProps={props.settingItemProps}/>
-            <Content />
+            <Profile />
         </div>
     )
 }
