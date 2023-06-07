@@ -1,7 +1,7 @@
 .content {
     display: grid;
     gap: 20px;
-    grid-template-columns: 60px 200px 1fr;
+    grid-template-columns: 60px 1fr 1fr;
     grid-template-areas:
             "avatar desc desc"
             "myposts myposts myposts";
@@ -10,7 +10,7 @@
     min-height: 100vh;
     padding: 10px;
 
-    background-color: var(--softBlue);
+    background-color: var(--mainColor);
 }
 
 .layout {

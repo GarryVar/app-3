@@ -14,11 +14,12 @@
 }
 
 .item svg {
-    fill: black;
+    fill: var(--mainTextColor);
 }
 
 .item:focus .link,
 .item:hover .link {
+    color: var(--color-accent-fg);
     text-decoration: underline;
 }
 
@@ -31,7 +32,7 @@
     padding: 5px;
 
     font-size: 0;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: var(--mainTextColor);
 
     transition: letter-spacing 0.2s ease-out;

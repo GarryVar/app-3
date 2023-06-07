@@ -1,7 +1,9 @@
 .nav {
+    position: sticky;
+    top: 0;
+
     grid-area: navbar;
     min-height: 100%;
-    overflow: hidden;
     border-right: 1px solid var(--border);
 }
 
@@ -14,9 +16,6 @@
 
 @media(min-width: 640px) {
     .nav {
-        position: sticky;
-        top: 0;
-
         padding-left: 10px;
         padding-right: 10px;
     }
