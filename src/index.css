@@ -1,16 +1,19 @@
 :root {
   /*Colors light-theme*/
+
   --light-bg: #f7f7f9;
   --header: #e6e6e6;
   --active: #fff3;
   --white: #ffffff;
-  --mainColor: #6a9461;
-  --linkHover : rgba(139, 195, 74, 0.55);
+  --mainColor: #8d8742;
+  --mainTextColor: #454141;
+  --linkHover :#83ad7a;
   --link: #697060;
-  --border: #dedede;
+  --border: #d6d6d6;
   --mainOutline: #87cefa;
 
   /*Response Width*/
+
   --md-mobile: 360px;
   --lg-mobile: 540px;
   --sm-tabletWidth: 640px;
@@ -22,6 +25,17 @@
   --gap-tablet: 20px;
   --gap-desktop: 60px;
 
+
+  --boxShadow-thin: inset 0 0 0 max(1px, 0.0625rem);
+  --boxShadow-thick: inset 0 0 0 max(2px, 0.125rem);
+  --boxShadow-thicker: inset 0 0 0 max(4px, 0.25rem);
+  --borderWidth-thin: max(1px, 0.0625rem);
+  --borderWidth-thick: max(2px, 0.125rem);
+  --borderWidth-thicker: max(4px, 0.25rem);
+  --borderRadius-small: 3px;
+  --borderRadius-medium: 6px;
+  --borderRadius-large: 12px;
+  --borderRadius-full: 100vh;
 }
 
 html {
@@ -37,7 +51,6 @@ html {
 
 * {
   outline: none;
-
   transition: all .1s ease-in-out;
 }
 
@@ -45,6 +58,8 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
+
+  color: var(--mainTextColor);
   font-family: 'Geologica', sans-serif;
 }
 
