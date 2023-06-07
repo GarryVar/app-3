@@ -5,13 +5,13 @@
   --header: #e6e6e6;
   --active: #fff3;
   --white: #ffffff;
-  --mainColor: #8d8742;
+  --mainColor: #eaf3f8;
   --mainTextColor: #454141;
   --linkHover :#83ad7a;
   --link: #697060;
   --border: #d6d6d6;
   --mainOutline: #87cefa;
-  --softBlue: #e6e6fa;
+  --softBlue: #b1e0fa;
 
   /*Response Width*/
 
@@ -21,6 +21,7 @@
   --tabletWidth: 768px;
   --desktopWidth: 1024px;
   --sm-radius: 3px;
+  --color-accent-fg: #0969da;
 
   --gap-mobile: 15px;
   --gap-tablet: 20px;
