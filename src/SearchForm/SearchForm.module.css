@@ -1,0 +1,24 @@
+.form {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr min-content;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    width: 320px;
+    height: 40px;
+
+    overflow: hidden;
+    border-radius: var(--borderRadius-medium);
+    border: 1px solid var(--border);
+}
+
+.form svg {
+    fill: var(--mainTextColor);
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+}
