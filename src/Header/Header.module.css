@@ -22,7 +22,6 @@
 .slogan {
     color: var(--mainTextColor);
     font-size: 16px;
-    font-family: "";
     text-transform: capitalize;
     text-align: center;
 }
