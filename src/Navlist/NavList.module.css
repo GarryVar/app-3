@@ -7,26 +7,19 @@
 .item {
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 10px;
+}
+
+.item:first-child {
+    margin-top: 10px;
 }
 
 .item svg {
-    fill: var(--mainColor);
-}
-
-.item:focus,
-.item:hover {
-    background-color: var(--linkHover);
+    fill: black;
 }
 
 .item:focus .link,
 .item:hover .link {
-    color: var(--white);
-}
-
-.item:focus svg,
-.item:hover svg {
-    fill: var(--white);
+    text-decoration: underline;
 }
 
 .link {
@@ -40,12 +33,11 @@
 
     font-size: 0;
     text-transform: uppercase;
-    color: var(--link);
+    color: var(--mainTextColor);
 
     transition: letter-spacing 0.2s ease-out;
     border-radius: var(--sm-radius);
 }
-
 
 @media (min-width: 640px) {
     .list {
@@ -53,16 +45,15 @@
     }
 
     .item {
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
     }
 
     .link {
         gap: 15px;
-        font-size: 14px;
+        font-size: 12px;
     }
 }
-
 
 @media(min-width: 768px) {
     .list {
@@ -77,6 +68,5 @@
         grid-template-columns: 20px 1fr;
         grid-template-rows: 1fr;
         justify-items: start;
-
     }
 }

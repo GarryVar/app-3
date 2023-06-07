@@ -16,7 +16,5 @@ let state = {
         width: 160,
         height: 40
     }
-
 }
-
 export default state;
