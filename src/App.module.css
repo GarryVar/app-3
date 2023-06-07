@@ -3,8 +3,15 @@
     display: grid;
     grid-auto-rows: 60px 1fr;
     grid-template-columns: min-content 1fr;
-    grid-template-areas: "header header header"
+    grid-template-areas: "navbar header header"
                         "navbar content contetn";
 
     background-color: var(--white);
+}
+
+@media(min-width: 768px) {
+    .wrapper {
+        border-radius: var(--borderRadius-large);
+        overflow: hidden;
+    }
 }
