@@ -8,12 +8,23 @@
 }
 
 .layout {
-    display: flex;
+    display: grid;
+    grid-template-columns: 320px 1fr 1fr;
+    grid-template-areas: "searchForm title callToolbar";
     align-items: center;
-    justify-content: center;
+
     padding-left: 10px;
     padding-right: 10px;
+
     height: 100%;
+}
+
+.slogan {
+    color: var(--mainTextColor);
+    font-size: 16px;
+    font-family: "";
+    text-transform: capitalize;
+    text-align: center;
 }
 
 .layout svg {
@@ -24,4 +35,10 @@
     .header {
         z-index: 2;
     }
+}
+
+@media(min-width: 768px) {
+ .header {
+     border-bottom: 1px  solid var(--border);
+ }
 }
