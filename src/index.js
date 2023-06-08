@@ -8,7 +8,10 @@ import state from "./redux/state";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <App navItemProps={state.navItemProps} settingItemProps={state.settingItemProps}/>
+      <App
+          logoState={state.logoState}
+          navItemProps={state.navBarState.navItemProps}
+          settingItemProps={state.navBarState.settingItemProps}/>
   </React.StrictMode>
 );
 

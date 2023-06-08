@@ -1,27 +1,23 @@
 .nav {
-    padding-left: 20px;
-    padding-right: 20px;
+    position: sticky;
+    top: 0;
 
     grid-area: navbar;
     min-height: 100%;
-    overflow: hidden;
-
-    background-color: var(--white);
+    border-right: 1px solid var(--border);
 }
 
 .layout {
     position: relative;
+    display: grid;
+    gap: 10px;
 }
 
-.separateBlock {
-    border-bottom: 1px solid var(--border);
-}
 
 @media(min-width: 640px) {
-    .nav{
-        position: sticky;
-        top: 80px;
-        border-right: none;
+    .nav {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 

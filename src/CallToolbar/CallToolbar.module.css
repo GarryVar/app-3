@@ -1,0 +1,14 @@
+.layout {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+}
+
+.call,
+.video {
+    width: 40px;
+    height: 40px;
+    background-color: #efefef;
+    border-radius: var(--borderRadius-medium);
+}

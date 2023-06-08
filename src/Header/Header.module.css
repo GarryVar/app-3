@@ -3,23 +3,37 @@
     top: 0;
 
     grid-area: header;
-    border-bottom: 1px solid var(--border);
-    background-color: var(--white);
-
     z-index: 1;
+    background-color: var(--white);
 }
 
 .layout {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr min-content;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 
-    padding-left: var(--gap-desktop);
-    padding-right: var(--gap-desktop);
     height: 100%;
+}
+
+.slogan {
+    display: none;
 }
 
 @media(min-width: 640px) {
     .header {
         z-index: 2;
+    }
+}
+
+@media(min-width: 768px) {
+ .header {
+     border-bottom: 1px  solid var(--border);
+ }
+
+    .layout {
+        grid-template-columns: 320px 1fr 1fr;
     }
 }
