@@ -14,10 +14,3 @@
 }
 
 
-@media(min-width: 640px) {
-    .nav {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-

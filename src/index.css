@@ -81,8 +81,8 @@ h1 {
 
 h1,
 h2,
-h3,
-p {
+h3 {
+  font-family: "Spot Mono Regular";
   margin: 0;
   padding: 0;
 }

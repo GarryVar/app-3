@@ -8,9 +8,9 @@ const Header = (props) => {
     return (
         <header className={s.header}>
             <div className={s.layout}>
+                <p className={s.slogan}>Cactuchat</p>
                 <SearchForm />
                 <CallToolbar />
-                <p className={s.slogan}>Cactuchat</p>
             </div>
         </header>
     )
